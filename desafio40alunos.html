@@ -16,10 +16,6 @@
     card-box : 
       border: 1px solid red;
     }
-  .h2 {
-      text-align: center;
-    }
-
 </head>
 
 <!-- ERRO 05: Atributo do body escrito errado ("backgroundcolor" sem hífen) -->
@@ -44,10 +40,10 @@
 
   </header>
 
-  <!-- ERRO 12: Uso da tag obsoleta <center> (descontinuada no HTML5); CORRIGIDO POR :FELLIPECHINCHILLA-->
- 
+  <!-- ERRO 12: Uso da tag obsoleta <center> (descontinuada no HTML5) -->
+  <center>
     <h2>Área do Aluno</h2>
-
+  </center>
 
   <main style="max-width: 800px; margin: 0 auto; padding: 20px;">
 
@@ -112,7 +108,7 @@
 
         <label for="email">E-mail:</label>
         <!-- ERRO 29: Atributo 'type' com valor inválido ("emai" em vez de "email") -->
-        <input type="email" id="email">
+        <input type="emai" id="email">
         <br>
 
         <!-- ERRO 30: Input do tipo radio sem o atributo 'name' para agrupar as opções -->
@@ -140,9 +136,13 @@
       <!-- ERRO 34: Tabela sem a tag <tbody> ou <thead> básica, misturando linhas soltas -->
       <table>
         <!-- ERRO 35: Célula de cabeçalho <th> usada diretamente dentro da <table> sem uma linha <tr> -->
+        <!-- ERRO CORRIGIDO -->
+        
+         <tr>
         <th>Aluno</th>
         <th>Pontos</th>
-
+        </tr>
+         
         <tr>
           <td>João Silva</td>
           <!-- ERRO 36: Célula de tabela <td> fechada com <th> -->
